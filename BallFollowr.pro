@@ -22,7 +22,13 @@ HEADERS += \
     ArduinoSerialCommunicator.hpp \
     rs232.h \
     serialcommunicatoradapter.h \
-    WindowsSerialCommunicator.h
+    WindowsSerialCommunicator.h \
+    util_funcs.h
+
+
+LIBS += -L/usr/local/libs -lopencv_core -lopencv_highgui \
+-lopencv_imgcodecs -lopencv_imgproc \
+-lopencv_video -lopencv_videoio
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings

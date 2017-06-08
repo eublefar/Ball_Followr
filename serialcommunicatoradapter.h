@@ -19,7 +19,7 @@ public:
 #ifdef _WIN32
         serial_impl = new windows::Serial(port, baud_rate);
 #else
-        serial_impl = new ArduinoSerialCommunicator(port, 115200);
+        serial_impl = new linux::ArduinoSerialCommunicator(port, 115200);
 #endif
     }
 

@@ -1,5 +1,6 @@
 #include "WindowsSerialCommunicator.h"
 #include<string>
+#ifdef _WIN32
 using namespace windows;
 Serial::Serial(std::string portName, DWORD baudRate)
 {
@@ -147,3 +148,4 @@ bool Serial::IsConnected()
     return this->connected;
 }
 
+#endif

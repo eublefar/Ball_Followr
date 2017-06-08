@@ -2,7 +2,7 @@
 #define SERIALCLASS_H_INCLUDED
 
 #define ARDUINO_WAIT_TIME 2000
-
+#ifdef _WIN32
 #include <windows.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -40,3 +40,4 @@ class Serial
 };
 }
 #endif // SERIALCLASS_H_INCLUDED
+#endif
